@@ -1,0 +1,8 @@
+AddDefaultCharset UTF-8
+## Кодировка в UTF-8
+
+<FilesMatch ".(htaccess|php|xml|dist)$">
+ Order allow,deny
+ Deny from all
+</FilesMatch>
+## Запрет на доступ к файлам в этой папке
