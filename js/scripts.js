@@ -97,7 +97,7 @@ $(document).ready(function() {
     if ( checkInput() ) {
       var querieStr = '';
       querieStr = encodeURI('name='+name.val()+'&email='+email.val()+'&subject='+subject.val()+'&message='+message.val());
-      $.post( "mail.php", r, function(data) {
+      $.post( "mail.php", querieStr, function(data) {
     		if (data) {
     			alert(data);
     		}

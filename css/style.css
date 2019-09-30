@@ -106,6 +106,28 @@ h6.subheader {
   margin-bottom: 25px;
 }
 
+ul.no-markers > li {
+  list-style-type: none;
+}
+
+ul.no-markers > li h5 {
+  margin-bottom: 0;
+}
+
+ul.no-markers > li div.marker-custom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+ul.no-markers > li div.marker-custom > div.marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  font-size: 1.5rem;
+}
+
 /******************* Grid (masonry) *******************/
 
 .grid:after {
@@ -149,6 +171,26 @@ a.lightbox-overlay {
 
   .grid-item {
     left: 0 !important;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  ul.stepper.stepper-vertical > li.projects::after {
+    display: none;
+  }
+
+  ul.stepper.stepper-vertical > li.projects > a {
+    padding: 1rem 0.5rem;
+  }
+
+  ul.stepper.stepper-vertical > li.projects > a > span.circle.point > i {
+    padding-left: 0;
+  }
+
+  ul.stepper.stepper-vertical > li.projects > div.step-content {
+    margin-left: 0;
   }
 
 }
