@@ -17,6 +17,12 @@ $(document).ready(function() {
     }, 200);
   });
 
+  $(window).on('resize', function() {
+    setTimeout(function() {
+      updateGrid();
+    }, 200);
+  });
+
   var name = $('input#name');
   var email = $('input#email');
   var subject = $('input#subject');
